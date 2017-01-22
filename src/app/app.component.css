@@ -7,18 +7,18 @@
 @media screen and (min-width: 768px) {
     .mdl-container{
         width: 750px;
-        margin: 5% 5%;
+        margin: 5% auto;
     }
 }
 @media screen and (min-width: 992px) {
     .mdl-container{
         width: 970px;
-        margin: 5% 5%;
+        margin: 5% auto;
     }
 }
 @media screen and (min-width: 1200px) {
     .mdl-container{
-        width: 1170px;
-        margin: 5% 5%;
+        width: 100%;
+        margin: 5% auto;
     }
 }
