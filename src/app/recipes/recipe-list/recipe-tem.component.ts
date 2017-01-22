@@ -8,6 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
     .recipe-list-a{
       text-decoration: none;
     }
+    .recipe-card-wide.mdl-card {
+      width: 656px;
+    }
+    .recipe-list-bg {
+      background:transparent;
+    }
 `]
 })
 export class RecipeTemComponent implements OnInit {
