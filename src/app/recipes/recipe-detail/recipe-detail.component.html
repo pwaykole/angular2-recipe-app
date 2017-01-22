@@ -1,31 +1,33 @@
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-    <img src="{{selectedRecipe?.imagePath}}" alt="" width="656" height="359" />
+<div *ngIf="selectedRecipe" class="mdl-detail-recipe">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+      <img src="{{selectedRecipe?.imagePath}}" alt="" />
+    </div>
   </div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-    <h4>{{selectedRecipe?.name}}</h4>
-  </div>
-  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+      <h4>{{selectedRecipe?.name}}</h4>
+    </div>
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
         To Shopping List
     </button>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
         Edit
     </button>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
       Delete
     </button>
+    </div>
   </div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-    <p>{{selectedRecipe?.description}}</p>
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+      <p>{{selectedRecipe?.description}}</p>
+    </div>
   </div>
-</div>
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-   Ingredients
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+      Ingredients
+    </div>
   </div>
 </div>
