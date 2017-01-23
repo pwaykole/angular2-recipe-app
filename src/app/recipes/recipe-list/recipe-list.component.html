@@ -5,6 +5,6 @@
 </div>
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-      <rb-recipe-tem [recipe]="recipe" (click)="onSelected(recipe)"></rb-recipe-tem>
+      <rb-recipe-tem *ngFor="let recipe of recipes" [recipe]="recipe" (click)="onSelected(recipe)"></rb-recipe-tem>
   </div>
 </div>

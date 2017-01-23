@@ -9,7 +9,8 @@ import { Component, OnInit, Input } from '@angular/core';
       text-decoration: none;
     }
     .recipe-card-wide.mdl-card {
-      width: 656px;
+      width: 492px;
+      margin-bottom:20px;
     }
     .recipe-list-bg {
       background:transparent;
