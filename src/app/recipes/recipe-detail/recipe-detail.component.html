@@ -9,7 +9,7 @@
       <h4>{{selectedRecipe?.name}}</h4>
     </div>
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" (click)="onAddToShoppingList()">
         To Shopping List
     </button>
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
@@ -27,7 +27,14 @@
   </div>
   <div class="mdl-grid">
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
-      Ingredients
+      <ul class="demo-list-icon mdl-list">
+          <li class="mdl-list__item" *ngFor="let item of selectedRecipe?.ingredients">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">local_dining</i>
+              <a>{{item.name}} ({{item.amount}})</a>
+            </span>
+          </li>
+      </ul>
     </div>
   </div>
 </div>
